@@ -182,7 +182,8 @@ body {
     /*Media query para dispositivos moviles*/
     .header {
         position: relative;
-
+        position: sticky;
+        top: 0;
     }
 
     /* Estilo para mostrar el menú cuando la clase 'nav_hidden' no está presente */
