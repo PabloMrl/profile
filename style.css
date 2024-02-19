@@ -175,9 +175,11 @@ body {
 .footer__copyright {
     color: #fff;
 }
+
+
 /*Media Queries */
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 548px) {
 
     /*Media query para dispositivos moviles*/
     .header {
