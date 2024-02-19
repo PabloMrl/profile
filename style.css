@@ -12,16 +12,14 @@ body {
    
 }
 
-/*Contenido principal de la página*/
 .main {
-    padding-block: 1rem;
-   
+    background-image: url(img/profileImg01.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
-
-.main__title {
-    margin-top: 40px;
-    padding: 0 0.5em ;
-
+.hero__title {
+    font-size: 32px;
 }
 
 /*Encabezado*/
@@ -132,10 +130,11 @@ body {
 
     padding: 1.3rem;
 }
+ 
 
 .btn--ver-mas {
     margin-top: 10px;
-    padding: 10px 12px;
+   padding: 10px;
     display: inline-block;
     width: 50%;
     border: none;
@@ -179,7 +178,7 @@ body {
 
 /*Media Queries */
 
-@media screen and (max-width: 548px) {
+@media screen and (max-width: 578px) {
 
     /*Media query para dispositivos moviles*/
     .header {
@@ -285,12 +284,66 @@ body {
     }
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 768px) and (max-width: 1024px) {
     .menu-btn_hidden {
         display: none;
     }
 
     .nav {
         display: block;
+    }
+
+    .hero_size_m{
+        padding: 2rem;
+        height: 40vh;
+        color:#fff;
+        text-align: center;
+    }
+
+    .hero__parrafo-size-m {
+        font-size: larger;
+        word-wrap: break-word;
+    }
+    
+    .hero__btn_size_m {
+        background-color: #F28585;
+        padding: 12px  14px;
+        margin-top: 20px;
+        width: 120px;
+        border:none;
+        color:#fff;
+    }
+
+    .hero__btn_size_m:hover{
+        background-color: #c4afaf;
+    }
+
+    .wrapper-section{
+        display: flex;
+        height: 400px;
+        background-color: #ffffffa9;
+    }
+    .benefits {
+        
+        color: #120808;
+    }
+    .card {
+        padding: 1em;
+        max-width: 100%;
+        height: auto;
+        position: relative;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        background-color: #fff;
+
+        display: flex;
+    }
+    .card__ing_size_m{
+        border-radius: 0;
+    }
+    .card__presentacion_size_m{
+        line-height: 1.5;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
     }
 }
