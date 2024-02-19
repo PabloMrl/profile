@@ -10,13 +10,12 @@
 body {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
    
+   
 }
 
 .main {
-    background-image: url(img/profileImg01.jpg);
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-color: #f1efed;
+    color:#332941;
 }
 .hero__title {
     font-size: 32px;
@@ -284,7 +283,7 @@ body {
     }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1024px) {
+@media screen and (min-width: 768px) and (max-width: 1084px) {
     .menu-btn_hidden {
         display: none;
     }
@@ -296,7 +295,7 @@ body {
     .hero_size_m{
         padding: 2rem;
         height: 40vh;
-        color:#fff;
+       
         text-align: center;
     }
 
