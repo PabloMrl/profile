@@ -61,7 +61,10 @@ body {
 .nav_hidden {
     display: none;
 }
-
+/*Título del hero*/
+.hero__title {
+    font-size: clamp(1rem, 7vh, 2rem);
+}
 /*Secciones con estilos generales*/
 .service,
 .hero,
@@ -119,7 +122,7 @@ body {
     /* Asegúrarse de que la sombra tenga los mismos bordes redondeados que la tarjeta */
 }
 
-.card__img_size_s {
+.card__img-size-s {
     width: 100%;
     border-radius: 50%;
 }
@@ -177,7 +180,7 @@ body {
 
 /*Media Queries */
 
-@media screen and (max-width: 578px) {
+@media screen and (width < 768px)  {
 
     /*Media query para dispositivos moviles*/
     .header {
@@ -283,7 +286,17 @@ body {
     }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1084px) {
+@media screen and (width > 768px) and (width > 770px) {
+    .header{
+        background-color: #333;
+    }
+    
+    .header__content {
+        display: flex;
+        width: 1400px;
+        margin-inline: auto;
+        justify-content: space-around;
+    }
     .menu-btn_hidden {
         display: none;
     }
@@ -319,30 +332,159 @@ body {
 
     .wrapper-section{
         display: flex;
-        height: 400px;
+        
         background-color: #ffffffa9;
     }
+
     .benefits {
         
         color: #120808;
+    }
+   
+    .card {
+        padding: 1em;
+        max-width: 500%;
+        height: auto;
+        position: relative;
+
+        display: flex;
+    }
+
+    .card__ing-size-m{
+        border-radius: 0;
+        height: 200px;
+        width: 200px;
+    }
+
+    .card__presentacion-size-m{
+        line-height: 1.5;
+        padding: 1em ;
+    }
+
+    .diseños__gallery-sm {
+        grid-template-columns: repeat(auto-fit, minmax(min(350px, 100%), 1fr));
+        gap: 10px;
+        padding: 2em ;
+    }
+
+    .diseños__title-s-m {
+        text-align: center;
+        font-size: 32px;
+    }
+}
+
+@media screen and (width >= 1024px) and (width > 1200px) {
+
+    .header{
+        background-color: #333;
+    }
+    
+    .header__content {
+        display: flex;
+        width: 1400px;
+        margin-inline: auto;
+        justify-content: space-around;
+    }
+
+    /*Contenido principal*/
+    .hero_size_m {
+      
+        padding: 120px;
+        text-align: center;
+    }
+    /*Seccion hero */
+   
+    .hero__title-s-m,
+    .hero__parrafo-size-m{
+        color: #180e0e;
+        line-height: 1.8;
+    }
+
+    .hero__title-s-m {
+        font-size: 42px;
+    }
+
+    .profile__card {
+        width: 600px;
+        margin-inline: auto;
+    }
+    .profile__title {
+        text-align: center;
+        font-size: xx-large;
     }
     .card {
         padding: 1em;
         max-width: 100%;
         height: auto;
         position: relative;
-        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-        background-color: #fff;
-
         display: flex;
     }
-    .card__ing_size_m{
+   
+    .card__ing-size-m{
         border-radius: 0;
+        height: 200px;
+        width: 100%;
     }
-    .card__presentacion_size_m{
+
+    .card__presentacion-size-m{
         line-height: 1.5;
+        padding: 1em ;
+        width: 400px;
+        height: auto;
+        
+    }
+
+    .wrapper-section{
         display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
+    }
+
+    .hero__btn_size_m{
+        padding: 10px;
+        margin-top: 20px;
+        width: 20%;
+        border: none;
+    }
+}
+
+@media screen  and (width >= 1400px) {
+  
+    .header{
+        background-color: #333;
+    }
+    
+    .header__content {
+        display: flex;
+        width: 1400px;
+        margin-inline: auto;
+        justify-content: space-around;
+    }
+
+    .hero_size_xl {
+       background-image: url(img/heroimage\ \(2\).jpg);
+       background-size: cover;
+       background-repeat: no-repeat;
+    }
+    .hero_size_xl,
+    .wrapper-section,
+    .profile,
+    .diseños{
+        padding: 14em;
+        max-width: 1400px;
+        margin-inline: auto;
+    }
+
+    .wrapper-section{
+        gap: 10px;
+    }
+
+    .service,
+    .benefits {
+        height: auto;
+        padding: 3rem;
+        background-color: #ffffff;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1), 0 0  rgba(0, 0, 0, 0.1);
+    }
+    .hero__title {
+        font-size: 45px;
     }
 }
