@@ -112,7 +112,7 @@ body {
 .profile {
     --bg-profile: hsl(89, 100%, 86%);
     width: 100%;
-    background-color:var(--bg-profile);
+    /* background-color:var(--bg-profile); */
     padding: 2em 0;
    
 }
@@ -123,9 +123,11 @@ body {
 }
 
 .card__img-size-s {
-    height: 100px;
-    width: 200px;
+    height: 100%;
+    width: 100%;
     object-fit: cover;
+    display: block;
+    margin-inline: auto;
 }
 .profile__card  {
     --bs:0 2px 4px rgba(0, 0, 0, 0.1);
@@ -166,6 +168,10 @@ body {
 .card__presentacion {
     word-wrap: break-word;
     font-size: medium;
+    line-height: 1.5;
+        padding: 4em ;
+        background-color: #332941;
+        color: var(--clr-primary);
 }
 
 .btn--ver-mas {
@@ -293,11 +299,12 @@ body {
    
     .profile__card {
         width: 100%;
-        background-color: #c55959;
+        
     }
    
     .card__img img {
-        width: 120px;
+        max-width: 100%;
+        height: 100%;
     }
     /*Estilos de las líneas del botón*/
     .menu-btn__line {
@@ -404,13 +411,13 @@ body {
     .card__img-size-m{
         border-radius: 0;
         height: auto;
-        width: 100%;
+        width: 400px;
         
     }
 
     .card__presentacion-size-m{
         line-height: 1.5;
-        padding: 10px ;
+        padding: 4em ;
         
     }
 
@@ -472,7 +479,7 @@ body {
 
     /*Estilos pertencientes a perfil*/
     .profile__card {
-        width: 600px;
+        width: 800px;
         margin-inline: auto;
     }
 
@@ -514,7 +521,7 @@ body {
 }
 
 @media screen  and (width >= 1400px) {
-  
+    
     .header{
         background-color: #333;
     }
@@ -534,17 +541,19 @@ body {
      }
 
      .hero_size_xl,
-     .wrapper-section
+     .wrapper-section, .profile,
+     .diseños
      {
          padding: 14em;
          max-width: 1400px;
          margin-inline: auto;
      }
 
-     .wrapper-section{
+     /* .wrapper-section{
          gap: 10px;
      }
- 
+  */
+  
      .service,
      .benefits {
          height: auto;
@@ -556,7 +565,7 @@ body {
      .hero__title {
          font-size: 45px;
      }
- }
+ 
     .card {
         width: 1200px;
     }
@@ -584,12 +593,12 @@ body {
         background-color: #332941;
         color: var(--clr-primary);
     }
-    /* .card__description-size-xl {
+    .card__description-size-xl {
         --fs-xl:clamp(1rem, 4vh, 1.4rem);
 
         font-size: var(--fs-xl)
     }
-     */
+    
     .btn--ver-mas-xl {
         display: inline-block;
         margin-top: 40px;
@@ -603,4 +612,4 @@ body {
         background-color: #c55959;
     }
 
-   
+}
