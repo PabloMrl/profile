@@ -8,23 +8,23 @@
   </head>
 
   <body>
+     <!-- Encabezado de la página -->
     <header class="header">
       <div class="header__content">
-        <!-- Tu contenido del encabezado aquí -->
+       
         <!--Logo-->
         <div class="header__logo logo">
-          <img src="#" alt="Logo" />
-        </div>
 
-        <!-- <div class="header__nav-container">
-   
-   </div> -->
+          <!-- <img src="" alt="Logo" /> -->
+          <span class="header__logo header__logo-title"  ><a href="#hero" class="header__logo-title"> Fuck you</a></span>
+
+        </div>
 
         <!--Navegación de la Página-->
         <nav class="nav nav_hidden nav_visibility">
           <ul class="nav__list">
             <li class="nav__item">
-              <a href="" class="nav__link nav__link_active">Home</a>
+              <a href="#hero" class="nav__link nav__link_active">Home</a>
             </li>
             <li class="nav__item">
               <a href="" class="nav__link">About</a>
@@ -49,8 +49,9 @@
 
     <!--Contenido principal -->
     <main class="main main_size_m main_size_l">
+
       <!--Section hero -->
-      <section class="hero hero_size_m hero_size_l hero_size_xl">
+      <section class="hero hero_size_m hero_size_l hero_size_xl" id="hero">
         <h1 class="hero__title hero__title-s-m hero__title-s-l">
           Web Solutions
         </h1>
@@ -124,24 +125,25 @@
       <!--Sección del Perfile-->
       <section class="profile">
         <h2 class="profile__title">Presentación</h2>
-        <div class="profile__card card">
+        <div class="profile__card card ">
           <div class="card__img">
             <img
               src="img/profileImg01.jpg"
-              class="card__img-size-s card__ing-size-m"
-              alt=""
+              class="card__img-size-s card__img-size-m card__img-size-xl"
+              alt="Imagen de Perfil"
+              title="Imagen de Ana López"
             />
           </div>
-          <div class="card__presentacion card__presentacion-size-m">
+          <div class="card__presentacion card__presentacion-size-m card__presentacion-size-xl">
             <span class="card__title">Acerca de Mi</span>
-            <h3 class="card__name">Ana López</h3>
-            <p class="card__description">
+            <h3 class="card__name card__name-size_xl">Ana López</h3>
+            <p class="card__description card__description-size-xl">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit
               impedit optio, aliquam iusto tempore sapiente officiis,
               consequatur omnis illo nisi quas porro minima?
             </p>
             <div class="card__btn btn">
-              <button class="btn btn--ver-mas">Ver Más</button>
+              <button class="btn btn--ver-mas btn--ver-mas-xl ">Ver Más</button>
             </div>
           </div>
         </div>
@@ -152,13 +154,15 @@
           Diseños personalizados
         </h2>
         <div class="diseños__gallery diseños__gallery-sm">
-          <img src="img/diseños (1).png" alt="" class="disenos__img" />
-          <img src="img/diseños (2).png" alt="" class="disenos__img" />
-          <img src="img/diseños (3).png" alt="" class="disenos__img" />
-          <img src="img/diseños (4).png" alt="" class="disenos__img" />
-          <img src="img/diseños (4).png" alt="" class="disenos__img" />
+          <img src="img/diseños (1).png" alt="Diseños personalizados 1" class="disenos__img" />
+          <img src="img/diseños (2).png" alt="Diseños personalizados 2" class="disenos__img" />
+          <img src="img/diseños (3).png" alt="Diseños personalizados 3" class="disenos__img" />
+          <img src="img/diseños (4).png" alt="Diseños personalizados 4" class="disenos__img" />
+          <img src="" alt="Diseños personalizados 5" class="disenos__img" />
         </div>
       </section>
+      
+    
     </main>
     <footer class="footer">
       <p class="footer__copyright">
