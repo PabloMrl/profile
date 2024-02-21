@@ -19,6 +19,7 @@ body {
 .main {
     background-color: #f1efed;
     color:#332941;
+    width: 100%;
 }
 
 
@@ -40,6 +41,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    
 }
 .header__logo-title {
     display: inline-block;
@@ -291,9 +293,12 @@ body {
    
     .profile__card {
         width: 100%;
+        background-color: #c55959;
     }
    
-    
+    .card__img img {
+        width: 120px;
+    }
     /*Estilos de las líneas del botón*/
     .menu-btn__line {
         width: 100%;
