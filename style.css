@@ -497,16 +497,21 @@ body {
    
     .card__img-size-m{
         border-radius: 0;
-        height: 200px;
-        width: 100%;
+        height: 100% ;
+        max-width: 100%;
     }
 
     .card__presentacion-size-m{
         line-height: 1.5;
-        padding: 1em ;
+        padding: 4em ;
         width: 400px;
         height: auto;
         
+    }
+    .card__description {
+        --fs-m:clamp(1rem, 4vh, 1.4rem);
+
+        font-size: var(--fs-m)
     }
     /*Contenedor que envuelve a service y benefits*/
     .wrapper-section{
