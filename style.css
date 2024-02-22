@@ -17,11 +17,11 @@ body {
 
 #progress {
     position: fixed;
-    top: 10;
+    top: 60px;
     width: 0%;
     background: #f2d985;
     height: 5px;
-    z-index: 1;
+    z-index: 1000;
 
     animation: progress-bar auto linear;
     animation-timeline: scroll(root);
@@ -54,7 +54,7 @@ to {width: 100%;}
     padding-inline: 1.4rem;
     position: sticky;
     top: 0;
-    z-index: 100;
+    z-index: 1001;
 }
 
 .header__content {
